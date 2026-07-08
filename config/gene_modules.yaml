@@ -1,0 +1,241 @@
+_meta:
+  version: v0-frozen
+  frozen_date: '2026-07-07'
+  note: SEED modules. Symbols validated via MyGene (taxid 9606). Additions require
+    Literature+Reviewer approval. Shared downstream genes appear in multiple modules
+    by design; see gene_module_overlap.csv.
+  id_source: mygene.info via genes-ontologies connector
+PYRIN_MODULE:
+  description: MEFV/pyrin-specific + pyrin-proximal regulatory axis, plus shared downstream
+    effectors.
+  genes:
+    MEFV:
+      symbol: MEFV
+      entrez: '4210'
+      ensembl: ENSG00000103313
+      uniprot: O15553
+      axis_role: pyrin_specific
+      rationale: Encodes pyrin; central pyrin-specific sensor (FMF gene)
+    PYCARD:
+      symbol: PYCARD
+      entrez: '29108'
+      ensembl: ENSG00000103490
+      uniprot: Q9ULZ3
+      axis_role: shared_downstream
+      rationale: ASC adaptor; bridges sensor to caspase-1 (shared)
+    CASP1:
+      symbol: CASP1
+      entrez: '834'
+      ensembl: ENSG00000137752
+      uniprot: P29466
+      axis_role: shared_downstream
+      rationale: Effector caspase; matures IL-1b/IL-18, cleaves GSDMD (shared)
+    GSDMD:
+      symbol: GSDMD
+      entrez: '79792'
+      ensembl: ENSG00000104518
+      uniprot: P57764
+      axis_role: shared_downstream
+      rationale: Pore-forming executioner of pyroptosis (shared)
+    IL1B:
+      symbol: IL1B
+      entrez: '3553'
+      ensembl: ENSG00000125538
+      uniprot: P01584
+      axis_role: shared_downstream
+      rationale: Mature IL-1b cytokine output (shared)
+    IL18:
+      symbol: IL18
+      entrez: '3606'
+      ensembl: ENSG00000150782
+      uniprot: Q14116
+      axis_role: shared_downstream
+      rationale: Mature IL-18 cytokine output (shared)
+    RHOA:
+      symbol: RHOA
+      entrez: '387'
+      ensembl: ENSG00000067560
+      uniprot: P61586
+      axis_role: pyrin_specific
+      rationale: RhoA activity gates pyrin; loss of RhoA signaling de-represses pyrin
+    RAC1:
+      symbol: RAC1
+      entrez: '5879'
+      ensembl: ENSG00000136238
+      uniprot: P63000
+      axis_role: pyrin_specific
+      rationale: Rho-family GTPase in pyrin regulatory context
+    CDC42:
+      symbol: CDC42
+      entrez: '998'
+      ensembl: ENSG00000070831
+      uniprot: P60953
+      axis_role: pyrin_specific
+      rationale: Rho-family GTPase in pyrin regulatory context
+    PKN1:
+      symbol: PKN1
+      entrez: '5585'
+      ensembl: ENSG00000123143
+      uniprot: Q16512
+      axis_role: pyrin_specific
+      rationale: PKN kinase phosphorylates pyrin (14-3-3 binding); keeps pyrin inactive
+    PKN2:
+      symbol: PKN2
+      entrez: '5586'
+      ensembl: ENSG00000065243
+      uniprot: Q16513
+      axis_role: pyrin_specific
+      rationale: PKN kinase phosphorylates pyrin (14-3-3 binding); keeps pyrin inactive
+    YWHAB:
+      symbol: YWHAB
+      entrez: '7529'
+      ensembl: ENSG00000166913
+      uniprot: P31946
+      axis_role: pyrin_specific
+      rationale: 14-3-3 protein binding phospho-pyrin; inhibitory regulation
+    YWHAZ:
+      symbol: YWHAZ
+      entrez: '7534'
+      ensembl: ENSG00000164924
+      uniprot: P63104
+      axis_role: pyrin_specific
+      rationale: 14-3-3 protein binding phospho-pyrin; inhibitory regulation
+    PSTPIP1:
+      symbol: PSTPIP1
+      entrez: '9051'
+      ensembl: ENSG00000140368
+      uniprot: O43586
+      axis_role: pyrin_specific
+      rationale: Pyrin-interacting; autoinflammatory (PAPA); pyrin-proximal regulation
+NLRP3_COMPARISON_MODULE:
+  description: NLRP3 inflammasome comparator (negative control axis).
+  genes:
+    NLRP3:
+      symbol: NLRP3
+      entrez: '114548'
+      ensembl: ENSG00000162711
+      uniprot: Q96P20
+      axis_role: nlrp3_or_generic
+      rationale: NLRP3 sensor; comparator inflammasome (NOT pyrin)
+    NEK7:
+      symbol: NEK7
+      entrez: '140609'
+      ensembl: ENSG00000151414
+      uniprot: Q8TDX7
+      axis_role: nlrp3_or_generic
+      rationale: NLRP3 licensing kinase (NLRP3-specific)
+    TXNIP:
+      symbol: TXNIP
+      entrez: '10628'
+      ensembl: ENSG00000265972
+      uniprot: Q9H3M7
+      axis_role: nlrp3_or_generic
+      rationale: NLRP3 activator via ROS/thioredoxin (NLRP3-general)
+    NFKB1:
+      symbol: NFKB1
+      entrez: '4790'
+      ensembl: ENSG00000109320
+      uniprot: P19838
+      axis_role: nlrp3_or_generic
+      rationale: NF-kB priming (signal 1) for inflammasome components
+    RELA:
+      symbol: RELA
+      entrez: '5970'
+      ensembl: ENSG00000173039
+      uniprot: Q04206
+      axis_role: nlrp3_or_generic
+      rationale: NF-kB subunit; priming (signal 1)
+    PYCARD:
+      symbol: PYCARD
+      entrez: '29108'
+      ensembl: ENSG00000103490
+      uniprot: Q9ULZ3
+      axis_role: shared_downstream
+      rationale: ASC adaptor; bridges sensor to caspase-1 (shared)
+    CASP1:
+      symbol: CASP1
+      entrez: '834'
+      ensembl: ENSG00000137752
+      uniprot: P29466
+      axis_role: shared_downstream
+      rationale: Effector caspase; matures IL-1b/IL-18, cleaves GSDMD (shared)
+    GSDMD:
+      symbol: GSDMD
+      entrez: '79792'
+      ensembl: ENSG00000104518
+      uniprot: P57764
+      axis_role: shared_downstream
+      rationale: Pore-forming executioner of pyroptosis (shared)
+    IL1B:
+      symbol: IL1B
+      entrez: '3553'
+      ensembl: ENSG00000125538
+      uniprot: P01584
+      axis_role: shared_downstream
+      rationale: Mature IL-1b cytokine output (shared)
+    IL18:
+      symbol: IL18
+      entrez: '3606'
+      ensembl: ENSG00000150782
+      uniprot: Q14116
+      axis_role: shared_downstream
+      rationale: Mature IL-18 cytokine output (shared)
+GENERIC_PYROPTOSIS_MODULE:
+  description: Shared downstream pyroptosis executioners/cytokines (canonical + non-canonical).
+  genes:
+    PYCARD:
+      symbol: PYCARD
+      entrez: '29108'
+      ensembl: ENSG00000103490
+      uniprot: Q9ULZ3
+      axis_role: shared_downstream
+      rationale: ASC adaptor; bridges sensor to caspase-1 (shared)
+    CASP1:
+      symbol: CASP1
+      entrez: '834'
+      ensembl: ENSG00000137752
+      uniprot: P29466
+      axis_role: shared_downstream
+      rationale: Effector caspase; matures IL-1b/IL-18, cleaves GSDMD (shared)
+    CASP4:
+      symbol: CASP4
+      entrez: '837'
+      ensembl: ENSG00000196954
+      uniprot: P49662
+      axis_role: nlrp3_or_generic
+      rationale: Non-canonical inflammatory caspase (generic pyroptosis)
+    CASP5:
+      symbol: CASP5
+      entrez: '838'
+      ensembl: ENSG00000137757
+      uniprot: P51878
+      axis_role: nlrp3_or_generic
+      rationale: Non-canonical inflammatory caspase (generic pyroptosis)
+    GSDMD:
+      symbol: GSDMD
+      entrez: '79792'
+      ensembl: ENSG00000104518
+      uniprot: P57764
+      axis_role: shared_downstream
+      rationale: Pore-forming executioner of pyroptosis (shared)
+    GSDME:
+      symbol: GSDME
+      entrez: '1687'
+      ensembl: ENSG00000105928
+      uniprot: O60443
+      axis_role: nlrp3_or_generic
+      rationale: Alternative gasdermin executioner (generic pyroptosis)
+    IL1B:
+      symbol: IL1B
+      entrez: '3553'
+      ensembl: ENSG00000125538
+      uniprot: P01584
+      axis_role: shared_downstream
+      rationale: Mature IL-1b cytokine output (shared)
+    IL18:
+      symbol: IL18
+      entrez: '3606'
+      ensembl: ENSG00000150782
+      uniprot: Q14116
+      axis_role: shared_downstream
+      rationale: Mature IL-18 cytokine output (shared)

@@ -1,0 +1,18 @@
+pmid	title_short	atherosclerosis_context	single_cell	bulk_rnaseq	mendelian_randomization	twas	druggability	knowledge_graph	ai_agent	n_methods_combined	combo_note
+41806154	SLC22A3 biomarker via bulk RNA-seq, ML, MR, scRNA-seq	True	True	True	True	False	True	False	False	4	Bulk RNA-seq + WGCNA + machine learning + SMR + scRNA-seq + molecular docking drug prediction
+40555237	Single-cell transcriptome-wide Mendelian randomization in ASCVD	True	True	False	True	True	False	False	False	3	scRNA-seq + TWAS + cis-MR + colocalization for atherosclerotic disease gene discovery
+42032825	PSMA4 therapeutic target via multiomics MR in atherosclerosis	True	True	False	True	False	True	False	False	3	SMR + two-sample MR + multiomics (mQTL, sQTL) + scRNA-seq + drug prediction (DGIdb)
+42176975	Infrapopliteal atherosclerosis via bulk RNA-seq, MR, scRNA-seq	True	True	True	True	False	False	False	False	3	Bulk RNA-seq + SMR + scRNA-seq + spatial transcriptomics + MR-scRNA immune phenotyping
+41601048	PFOS causal effects on atherosclerosis via MR and network toxicology	True	True	False	True	False	False	True	False	3	MR + network toxicology (PPI network, enrichment) + scRNA-seq + molecular docking
+37351287	TWAS and SMR for coronary atherosclerosis susceptibility genes	True	True	False	True	True	False	False	False	3	TWAS (4 approaches) + SMR + scRNA-seq immune characterization in coronary atherosclerosis
+39364414	Immune insights in atherosclerosis via scRNA-seq and bulk RNA-seq	True	True	True	False	False	False	False	False	2	scRNA-seq + bulk RNA-seq + WGCNA + machine learning risk model + ROC validation
+41262249	Hub genes for atherosclerosis via machine learning and scRNA-seq	True	True	True	False	False	False	False	False	2	Bulk RNA-seq + WGCNA + machine learning (SVM-RFE, LASSO, XGBoost, RF) + scRNA-seq analysis
+37862061	Knowledge graph for coronavirus target and drug discovery	False	False	False	False	False	True	True	False	2	Knowledge graph (CovKG) construction + semantic reasoning + drug repurposing
+38578805	Progeni: machine learning knowledge graph for target identification	False	False	False	False	False	True	True	False	2	Probabilistic knowledge graph + graph neural networks + literature integration for target ID
+35939454	Knowledge graph tensor factorization for drug target discovery	False	False	False	False	False	True	True	False	2	Knowledge graph embeddings + tensor factorization + neural network for target prediction
+35021991	Knowledge graph analytics platform (KGAP) for Parkinson's disease targets	False	False	False	False	False	True	True	False	2	Knowledge graph integration (LINCS + IDG) with graph analytics for target prioritization
+29892015	Multi-ethnic GWAS and RNA-seq for atrial fibrillation	False	False	True	False	True	False	False	False	2	GWAS + bulk RNA-seq (atrial tissue) + eQTL + transcriptome-wide analysis
+40931012	Integrated single-cell atlas of atherosclerotic plaques	True	True	True	False	False	False	False	False	2	scRNA-seq atlas (250k cells) with deconvolution of bulk RNA-seq for atherosclerotic plaques
+37950869	Integrative scRNA-seq meta-analysis and GWAS in atherosclerosis	True	True	True	False	False	False	False	False	2	scRNA-seq meta-analysis (22 libraries) + GWAS integration + spatial imaging validation
+41676784	Review of single-cell analysis advances in atherosclerotic plaque biology	True	True	True	False	False	False	False	False	2	scRNA-seq and spatial transcriptomics review; mentions bulk RNA-seq methods for plaque characterization
+37646165	Proteomics and multi-omics integration in atherosclerotic plaques	True	True	True	False	False	False	False	False	2	Proteomics + bulk RNA-seq + scRNA-seq + spatial RNA-seq integration in atherosclerosis

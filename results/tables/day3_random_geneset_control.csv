@@ -1,0 +1,7 @@
+cell_type,observed_PYRIN_BACKBONE_mean,null_mean,null_sd,empirical_percentile,n_random_sets,match
+Macrophage/Myeloid,0.5536,0.3661,0.1983,82.0,200,size+expression-bin
+Endothelial,0.4377,0.3402,0.2122,71.0,200,size+expression-bin
+T/NK,0.3824,0.3119,0.2091,65.0,200,size+expression-bin
+SMC/Fibroblast,0.3587,0.3148,0.1981,61.5,200,size+expression-bin
+B/Plasma,0.2954,0.2812,0.2057,55.0,200,size+expression-bin
+Mast,0.3192,0.3218,0.2124,52.0,200,size+expression-bin

@@ -1,0 +1,10 @@
+target,description,status,runtime,notes
+make smoke,scripts/smoke_test.py,PASS,<3s,imports/config/gene modules/ODE baseline/output presence — 6/6
+make test,pytest tests/,PASS (13/13),~1.3s,module + scoring + ODE tests
+04_pyrin_ode_baseline.py,ODE baseline,RUNNABLE,<5s,no raw data needed
+05_run_ode_scenarios.py,4 scenarios + readouts,RUNNABLE,<10s,no raw data needed
+06_priority_score.py,priority score,RUNNABLE,<2s,uses handoff candidates
+02_score_plaque_cell_states.py,single-cell,NEEDS_RAW,~mins,requires GSE159677 download (~308MB)
+03_bulk_plaque_validation.py,bulk,NEEDS_RAW,<1min,requires GSE120521 FPKM (~5.6MB)
+make figures,ODE figs,RUNNABLE,<15s,single-cell/bulk figs need raw data
+make all,full reproduction,DOCUMENTED,varies,public downloads + 5 scripts + tests

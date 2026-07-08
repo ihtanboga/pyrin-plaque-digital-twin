@@ -1,0 +1,13 @@
+parameter,mean_abs_spearman,max_abs_effect,rank
+decay,0.7242000000000001,8.2929,1
+priming_input,0.3448,0.7,2
+pyrin_activation_threshold,0.1902,0.3,3
+inhibition_factor,0.1656,0.1,4
+cytokine_release_rate_IL1B,0.1452,2.7685,5
+pyrin_activation_rate,0.1432,0.3,6
+ASC_recruitment_rate,0.1226,0.3,7
+GSDMD_cleavage_rate,0.1072,0.4575,8
+CASP1_activation_rate,0.1054,0.5694,9
+cytokine_release_rate_IL18,0.0982,2.2148,10
+rupture_rate,0.076,0.0,11
+saturation,0.0508,0.3423,12

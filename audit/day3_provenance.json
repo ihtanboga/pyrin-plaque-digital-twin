@@ -1,0 +1,73 @@
+{
+  "timestamp_utc": "2026-07-07T21:41:40.618931+00:00",
+  "python": "3.13.14",
+  "packages": {
+    "python": "3.13.14",
+    "scanpy": "1.12.1",
+    "anndata": "0.12.19",
+    "pandas": "2.3.3",
+    "numpy": "2.4.6",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.0",
+    "seaborn": "0.13.2",
+    "scikit-learn": "1.9.0",
+    "numba": "0.65.1",
+    "leidenalg": "0.12.0",
+    "python-igraph": "1.0.0",
+    "umap-learn": "0.5.12",
+    "pyarrow": "24.0.0",
+    "pyyaml": "6.0.3"
+  },
+  "inputs": {
+    "data/raw/GSE159677/GSE159677_aggregate_filtered.tar.gz": "8cd0b7f84725e0c81d21ac7d4d099c10e17494184fa249da3ebac781c7706784",
+    "config/gene_modules.yaml": "f1078086783422bdba456e3db8607703f79836877430b84173c86131547c62a6"
+  },
+  "params": {
+    "seed": 0,
+    "min_genes": 200,
+    "min_cells": 3,
+    "pct_mt_max": 20,
+    "norm": "CP10k+log1p",
+    "n_hvg": 2000,
+    "n_pcs": 30,
+    "leiden_res": 0.6,
+    "annotation": "marker-based provisional (no published per-cell labels in GEO supp)",
+    "score_method": "scanpy.score_genes ctrl_size=50 n_bins=25 seed=0",
+    "rank_score": "mean per-gene percentile",
+    "random_control": "200 size+expression-bin matched sets"
+  },
+  "outputs": [
+    "data/processed/gse159677_scored.h5ad",
+    "results/tables/cell_state_scores.parquet",
+    "results/tables/pyrin_specificity_delta.csv"
+  ],
+  "dataset": "GSE159677",
+  "atlas_used": false,
+  "note": "DS_SC_ATLAS_INTEGRATED not used (NEEDS_REVIEW)",
+  "script_checksums": {
+    "scripts/02_score_plaque_cell_states.py": "8325332bbd4a08dcd1781419e214fb15e117a82c388eec794e007b528e519f22",
+    "src/pyrinplaque/modules.py": "deb97076e5fd3fcb130e1488a9f08c41c61a4709dc5e5cc2a61c0b41fa28bbc0",
+    "src/pyrinplaque/scoring.py": "fcd1d91551a3e38eaddf652813d682cddab8b09cd0da6ee9f820833bfbfb89d0",
+    "src/pyrinplaque/plotting.py": "ff7479e46d60dd0da22280c45eb808a33e3b8e3dc7ed5737f577a2aa329159b3",
+    "src/pyrinplaque/provenance.py": "1fad5f366cdfe36a383b376168b06b6a2762f3f59ffe0af6abe86e9b888f9edd"
+  },
+  "figure_checksums": {
+    "results/figures/fig2_cellstate_program_map.png": "0d6adf028ddc8ec66cb318ec0288c3e5db270dde995961ab32e268291b13122c",
+    "results/figures/module_score_umap.png": "d2795b1245a377dd921b37866070f9fd1ddcd3b23870651035b45c3ac38230bc",
+    "results/figures/day3_pyrin_vs_nlrp3_violin.png": "1deaf5728c4f3a96cf97fee1d3ff719b135118612c94a9023e5413e526b282d6",
+    "results/figures/day3_gene_dotplot.png": "181a2263b4f792f6fb3a1dafa7f0800f5f9abc0dcd873df5eb10bdf78feeec06",
+    "results/figures/day3_mefv_detection.png": "8193b9f1d3cbf1306cb6632aa9bc7b8b2275d377e734e2c57250aca67660962f"
+  },
+  "table_checksums": {
+    "results/tables/cell_state_scores.parquet": "3f7ecc815cd91e90934e965ab78a923068c17b896d4fecbb479d69e05e220e7e",
+    "results/tables/cell_state_summary.csv": "a7472737cbc805fab565c8dddf28712ce23a9dc727f918c3d7420dbced746d40",
+    "results/tables/pyrin_specificity_delta.csv": "72c2d5b20855460c381531b2003e0d91783527d9b588aa86006b27137fc0dce5",
+    "results/tables/day3_gene_availability.csv": "f80cd6871ec204866321dce29052c9602b5de8aae6b95d1ae3c0beb336b854bd",
+    "results/tables/day3_gene_detection_by_celltype.csv": "922367c2cdd3b50b64640ee3a0f539763933912edf716e424feae5ff66af7ff9",
+    "results/tables/day3_random_geneset_control.csv": "624f55e6fe90dfd76a57a3f56ee1b883c3365b80785f9a8befedeaa4490b4c28",
+    "results/tables/day3_donor_influence.csv": "2cd2aad39a98bf869f99f9235ac281ef62c00daa9a7df53af67961fea949034b",
+    "results/tables/day3_shared_downstream_exclusion.csv": "0ddc8961f2dd66ef907f98a8e371a75f9c1e7470f833fc0b4ae1385d67dc01f1",
+    "results/tables/day3_cellstate_ranking.csv": "1a0aff261d4273763ae12ea8eb7681d6d2d97b8ed48acc947afc0b127f8beea9"
+  },
+  "numba_fix": "NUMBA_CACHE_DIR=/tmp/numba_cache set before importing scanpy (sandbox cannot write __pycache__ to site-packages); JIT enabled."
+}

@@ -1,0 +1,18 @@
+# Day-5: four hypothesis-generating scenarios (dimensionless).
+# NOT calibrated to any MEFV variant, drug, or patient.
+scenarios:
+  baseline:
+    description: "Standard activation threshold and priming."
+    overrides: {}
+  pyrin_sensitized_low_threshold:
+    description: "Lower pyrin_activation_threshold: MEFV-like / pyrin-sensitized hypothesis. NOT calibrated to any variant."
+    overrides: { pyrin_activation_threshold: 0.30 }
+  high_inflammatory_priming:
+    description: "Higher priming_input, threshold unchanged: non-specific inflammatory / myeloid-abundance proxy (Day-4 confounding)."
+    overrides: { priming_input: 1.8 }
+  inhibited_or_delayed_activation:
+    description: "Higher inhibition_factor + raised threshold: generic intervention-like delay. NOT a drug claim."
+    overrides: { inhibition_factor: 0.5, pyrin_activation_threshold: 0.7 }
+t_span: [0, 50]
+n_points: 501
+seed: 0

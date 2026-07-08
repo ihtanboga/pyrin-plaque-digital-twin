@@ -1,0 +1,13 @@
+gene,chembl_target_found,ot_tractable_buckets_total,ot_small_molecule_buckets,ot_antibody_buckets,clinical_alignment,pyrin_role
+MEFV,1,4,Structure with Ligand,GO CC high conf; Human Protein Atlas loc,colchicine (FMF standard of care — pyrin pathway; NOT proven mechanism in plaque),pyrin sensor
+RHOA,1,9,Structure with Ligand; High-Quality Ligand,GO CC high conf; UniProt loc med conf; Human Protein Atlas loc,no direct clinical agent identified,pyrin backbone
+RAC1,1,9,Structure with Ligand; High-Quality Ligand; High-Quality Pocket,UniProt loc high conf; GO CC high conf,no direct clinical agent identified,pyrin backbone
+CDC42,1,9,Structure with Ligand; High-Quality Ligand; High-Quality Pocket; Druggable Family,UniProt loc high conf; GO CC high conf,no direct clinical agent identified,pyrin backbone
+PKN1,1,10,Structure with Ligand; High-Quality Ligand; Druggable Family,UniProt loc med conf; GO CC med conf; Human Protein Atlas loc,no direct clinical agent identified,pyrin backbone
+PKN2,1,7,Structure with Ligand; High-Quality Ligand; Druggable Family,GO CC high conf,no direct clinical agent identified,pyrin backbone
+PSTPIP1,0,5,,UniProt loc high conf; GO CC high conf; Human Protein Atlas loc,no direct clinical agent identified,pyrin backbone
+NLRP3,1,0,none returned,,"colchicine (approved; COLCOT NCT02551094 n=4745, LoDoCo2 NCT03048825 n=7264 — NLRP3-associated, non-specific); MCC950 preclinical SM inhibitor",NLRP3 comparator
+CASP1,1,11,Advanced Clinical; Structure with Ligand; High-Quality Ligand; Med-Quality Pocket,UniProt loc high conf; GO CC med conf,"VX-765/belnacasan (Phase 2, other indications)",shared downstream
+GSDMD,1,9,High-Quality Ligand,UniProt loc high conf; GO CC high conf; UniProt loc med conf,disulfiram/DMF (preclinical GSDMD modulators),shared downstream
+IL1B,1,8,Structure with Ligand; High-Quality Ligand,Approved Drug; UniProt loc high conf; GO CC high conf,"canakinumab (approved, CANTOS NCT01327846 n=10066); anakinra (IL-1 axis)",shared downstream
+IL18,1,7,,Advanced Clinical; UniProt loc high conf; GO CC high conf,IL-18BP / tadekinig alfa (investigational),shared downstream

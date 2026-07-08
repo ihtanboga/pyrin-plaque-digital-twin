@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "PYRIN-PLAQUE Digital Twin"
+message: "If you use this workbench, please cite it."
+type: software
+abstract: >-
+  An auditable, public-data-only Claude Science workflow mapping MEFV/pyrin
+  inflammasome biology to human atherosclerotic plaque cell states, bulk plaque
+  instability, and a dimensionless pyroptosis digital twin. Hypothesis-generating,
+  not a validated-target or clinical claim.
+authors:
+  - name: "PYRIN-PLAQUE Digital Twin contributors"
+license: MIT
+version: "1.0.0-mvp"
+date-released: "2026-07-08"
+keywords:
+  - pyrin
+  - MEFV
+  - inflammasome
+  - atherosclerosis
+  - single-cell
+  - hypothesis-generating
+  - Claude Science
+references:
+  - type: data
+    title: "scRNA-seq of calcified atherosclerotic plaque"
+    notes: "NCBI GEO GSE159677"
+  - type: data
+    title: "RNA-seq of stable and unstable atherosclerotic plaque sections"
+    notes: "NCBI GEO GSE120521"

@@ -1,0 +1,6 @@
+item,status_in_field,novelty_risk,mitigation
+pipeline_combination,single-cell+bulk+MR/omics+AI is common (6 athero papers ≥3 methods),HIGH if claimed novel,MITIGATED: explicitly not claimed novel
+nlrp3_atherosclerosis,NLRP3 inflammasome in atherosclerosis well-established (CANTOS),HIGH if presented as finding,MITIGATED: labeled saturated comparator
+pyrin_cell_state_map,pyrin-specific cell-state-resolved map in plaque less explored,MODERATE — the actual contribution,"FRAMED as suggestive, moderate confidence only"
+digital_twin,dimensionless pyrin pyroptosis ODE,LOW — clearly hypothesis-generating,"FRAMED as uncalibrated, non-clinical"
+auditable_workflow,reviewer-gated provenance-linked Claude Science workflow,LOW — process contribution,"FRAMED as auditability, not scientific firstness"

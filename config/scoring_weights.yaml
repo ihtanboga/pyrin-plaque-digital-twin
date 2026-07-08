@@ -1,0 +1,38 @@
+# Pyrin-Plaque Priority Score weights — "hypothesis prioritization for future validation".
+# NOT a drug-discovery ranking. Fully decomposable; every candidate's score = sum(positive*weight) - sum(penalty*weight).
+# Positive components sum to a max of 100 points; penalties can subtract up to 50.
+
+positive_components:   # each scored 0..1 per candidate, then * weight (points)
+  literature_support_score: 15         # strength+quantity of linked claim_cards (pyrin-specific only)
+  pyrin_specificity_score: 20          # PYRIN_BACKBONE vs NLRP3_BACKBONE separation; shared-downstream get 0
+  singlecell_compartment_score: 15     # Day-3 compartment localization strength (myeloid signal)
+  MEFV_detection_score: 10             # MEFV detection rate support (capped by sparsity)
+  shared_downstream_exclusion_pass_score: 5  # signal survives shared-downstream exclusion (Day-3 control)
+  bulk_directional_support_score: 10   # Day-4 bulk direction (BEFORE confounding penalty)
+  ODE_leverage_score: 5                # qualitative ODE leverage only (never magnitude)
+  clinical_alignment_score: 10         # trial/epidemiology alignment (non-mechanistic)
+  druggability_or_intervention_plausibility_score: 10  # tractability (plausibility only)
+# total positive max = 100
+
+penalty_components:    # each scored 0..1 per candidate, then * weight (points subtracted)
+  sparse_expression_penalty: 8         # CV01 MEFV ~0.97% sparse/dropout
+  provisional_annotation_penalty: 4    # CV02 provisional labels
+  small_n_penalty: 6                   # CV03/CV08 n=3 sc / n=4 bulk
+  random_control_penalty: 5            # CV04 random set p~0.18
+  ac_pa_mixed_signal_penalty: 8        # CV06 AC/PA mixed — STRONG for any plaque-core claim
+  myeloid_confounding_penalty: 9       # CV07 bulk myeloid confounding — STRONG for any bulk support
+  no_genotype_penalty: 4               # CV09 no MEFV genotype/FMF stratification
+  shared_downstream_non_specificity_penalty: 3  # CV11 shared nodes get no pyrin credit
+  ODE_uncalibrated_penalty: 3          # CV10 ODE uncalibrated
+# total penalty max = 50
+
+confidence_grade_bins:   # on final_priority_score
+  high: 55
+  moderate: 35
+  low: 0
+
+notes:
+  - "Myeloid confounding (9) and AC/PA mixed (8) are the two strongest penalties by design (Day-4/Day-3.5 findings)."
+  - "Shared downstream candidates receive pyrin_specificity_score = 0 by construction."
+  - "NLRP3 comparator may score high on biology but is flagged 'not novel / saturated comparator'."
+  - "ODE_leverage_score contributes qualitative ordering only; ODE_uncalibrated_penalty always applied when ODE is cited."

@@ -1,0 +1,7 @@
+cell_type,n_cells,n_donors,PYRIN_BACKBONE_z,NLRP3_BACKBONE_z,pyrin_specificity_delta,PYRIN_FULL_minus_BACKBONE,MEFV_pct
+Macrophage/Myeloid,10371,6,0.5214,-0.2165,0.7379,-0.036,4.3
+SMC/Fibroblast,10290,6,-0.2119,-0.633,0.421,-0.1875,0.058
+Endothelial,6324,6,0.0854,-0.0459,0.1313,-0.1816,0.237
+Mast,574,6,-0.3603,-0.1941,-0.1662,-0.0909,0.0
+T/NK,19114,6,-0.1225,0.4511,-0.5736,-0.1402,0.052
+B/Plasma,2707,6,-0.4499,0.199,-0.6489,-0.1136,0.0

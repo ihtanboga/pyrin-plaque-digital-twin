@@ -1,0 +1,86 @@
+_meta:
+  frozen_date: '2026-07-07'
+  verified_via: omics-archives geo_get_series
+datasets:
+  DS_BULK_GSE120521:
+    accession: GSE120521
+    source_db: GEO
+    source_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE120521
+    species: Homo sapiens
+    tissue: carotid plaque (stable vs unstable sections)
+    assay: bulk RNA-seq
+    sample_count: 8
+    file_type: FPKM matrix (.xlsx supplementary)
+    download_method: GEO series supplementary FTP (GSE120521_Athero_RNAseq_FPKM.xlsx)
+    local_path: data/raw/GSE120521/
+    license_note: GEO public (Public on Aug 02 2019); verify per-dataset terms; derived
+      tables only
+    access_date: '2026-07-07'
+    verification_status: VERIFIED
+    purpose: 'Aim3 bulk validation: PYRIN vs NLRP3 module score by plaque stability'
+    pubmed: '31339449'
+    limitation: Very small n (4 donors, paired); section-level bulk confounded by
+      cell composition
+    sha256: TBD (on download)
+  DS_SC_GSE159677:
+    accession: GSE159677
+    source_db: GEO
+    source_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE159677
+    species: Homo sapiens
+    tissue: 'carotid plaque: atherosclerotic core + proximal adjacent'
+    assay: scRNA-seq (10x)
+    sample_count: 6
+    file_type: 10x filtered feature-barcode matrices (.tar.gz), molecule_info (.h5)
+    download_method: GEO series/sample supplementary FTP (feature-bc matrix tar.gz
+      per sample)
+    local_path: data/raw/GSE159677/
+    license_note: GEO public (Public on Oct 21 2020); derived tables only
+    access_date: '2026-07-07'
+    verification_status: VERIFIED
+    purpose: Aim2 PRIMARY single-cell cell-state module scoring (MEFV/pyrin vs NLRP3)
+    pubmed: '36224302'
+    limitation: Small sample size (3 donors); calcified-core context; no genotype/FMF
+      stratification
+    sha256: TBD (on download)
+  DS_SC_GSE253902:
+    accession: GSE253902
+    source_db: GEO
+    source_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253902
+    species: Homo sapiens
+    tissue: carotid artery (symptomatic/asymptomatic)
+    assay: CITE-seq (scRNA + ADT)
+    sample_count: 12
+    file_type: 10x matrices (.mtx.gz/barcodes/features), ADT barcodes
+    download_method: GEO series/sample supplementary FTP (RAW.tar + per-sample mtx)
+    local_path: data/raw/GSE253902/
+    license_note: GEO public (Public on Apr 12 2024); derived tables only
+    access_date: '2026-07-07'
+    verification_status: VERIFIED
+    purpose: Aim2 STRETCH independent validation + surface-protein context (symptom
+      stratification)
+    pubmed: 38385291;40475413;40827730
+    limitation: Heavier processing (CITE-seq); label harmonization to primary needed;
+      stretch goal
+    sha256: TBD (on download)
+  DS_SC_ATLAS_INTEGRATED:
+    accession: TBD (not a single GEO accession)
+    source_db: Zenodo/CELLxGENE/publication (TBD)
+    source_url: TBD — verify exact deposition of the integrated human plaque scRNA-seq
+      atlas
+    species: Homo sapiens
+    tissue: atherosclerotic plaque (multi-study integration)
+    assay: integrated scRNA-seq atlas
+    sample_count: TBD
+    file_type: h5ad (expected)
+    download_method: TBD (Zenodo/CELLxGENE object)
+    local_path: data/raw/DS_SC_ATLAS_INTEGRATED/
+    license_note: TBD — must verify license before use; do not claim to have built
+      the atlas
+    access_date: '2026-07-07'
+    verification_status: NEEDS_REVIEW
+    purpose: Aim2 desired PRIMARY atlas (harmonized labels) if a public downloadable
+      object is confirmed
+    pubmed: TBD
+    limitation: No verified single accession/download object located on Day 1; use
+      GSE159677 as verified primary until confirmed
+    sha256: TBD (on download)

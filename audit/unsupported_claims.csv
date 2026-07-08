@@ -1,0 +1,2 @@
+check,severity,finding,action
+-,INFO,No unsupported claims found — all 13 checks PASS,none

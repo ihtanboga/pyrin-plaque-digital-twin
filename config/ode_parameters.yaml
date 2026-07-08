@@ -1,0 +1,16 @@
+# Day-4 minimal pyrin-adapted pyroptosis ODE parameters (DIMENSIONLESS).
+# Hypothesis-generating scaffold only. NOT calibrated to patients. NOT a clinical prediction model.
+# The NLRP3 pyroptosis ODE literature is used as a modeling TEMPLATE only, not as evidence that pyrin == NLRP3.
+baseline:
+  priming_input: 1.0            # upstream priming signal (NF-kB-driven pro-IL1B/pro-IL18 availability)
+  pyrin_activation_threshold: 0.5   # threshold on priming above which pyrin sensor activates
+  pyrin_activation_rate: 0.8    # rate P_inactive -> P_active once threshold exceeded
+  ASC_recruitment_rate: 0.6     # P_active drives ASC speck formation
+  CASP1_activation_rate: 0.7    # ASC complex activates caspase-1
+  GSDMD_cleavage_rate: 0.9      # CASP1 cleaves GSDMD -> GSDMD_N
+  cytokine_release_rate_IL1B: 0.5   # GSDMD_N pore -> IL-1b externalization
+  cytokine_release_rate_IL18: 0.4   # GSDMD_N pore -> IL-18 externalization
+  rupture_rate: 0.3             # GSDMD_N -> membrane rupture proxy
+  inhibition_factor: 0.0        # 0 = no inhibitor; 1 = full block of pyrin activation
+  decay: 0.15                   # generic first-order decay of active species
+  saturation: 2.0               # Hill-like saturation ceiling for production terms

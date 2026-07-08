@@ -1,0 +1,228 @@
+{
+  "date": "2026-07-07",
+  "day": 2,
+  "connectors_used": [
+    "pubmed",
+    "clinical-trials",
+    "protein-annotation",
+    "genes-ontologies(Day1)",
+    "biorxiv(attempted-no-keyword-search)"
+  ],
+  "queries": [
+    {
+      "axis": "A",
+      "tool": "pubmed.search_articles",
+      "q": "pyrin inflammasome MEFV mechanism review",
+      "max": 6,
+      "n": 6,
+      "total": 20
+    },
+    {
+      "axis": "A",
+      "tool": "pubmed.search_articles",
+      "q": "pyrin RhoA regulation 14-3-3 PKN inflammasome",
+      "max": 6,
+      "n": 0,
+      "total": 0
+    },
+    {
+      "axis": "A",
+      "tool": "pubmed.search_articles",
+      "q": "familial Mediterranean fever MEFV pyrin gain of function",
+      "max": 5,
+      "n": 5,
+      "total": 25
+    },
+    {
+      "axis": "A",
+      "tool": "pubmed.search_articles",
+      "q": "PSTPIP1 pyrin interaction autoinflammatory",
+      "max": 4,
+      "n": 4,
+      "total": 18
+    },
+    {
+      "axis": "B",
+      "tool": "pubmed.search_articles",
+      "q": "NLRP3 inflammasome atherosclerosis review",
+      "max": 6,
+      "n": 6,
+      "total": 323
+    },
+    {
+      "axis": "B",
+      "tool": "pubmed.search_articles",
+      "q": "macrophage pyroptosis atherosclerotic plaque instability",
+      "max": 6,
+      "n": 6,
+      "total": 6
+    },
+    {
+      "axis": "B",
+      "tool": "pubmed.search_articles",
+      "q": "endothelial NLRP3 inflammasome atherosclerosis",
+      "max": 4,
+      "n": 4,
+      "total": 227
+    },
+    {
+      "axis": "B",
+      "tool": "pubmed.search_articles",
+      "q": "vascular smooth muscle cell pyroptosis atherosclerosis",
+      "max": 4,
+      "n": 4,
+      "total": 51
+    },
+    {
+      "axis": "C",
+      "tool": "pubmed.search_articles",
+      "q": "GSDMD gasdermin D pyroptosis IL-1beta release",
+      "max": 6,
+      "n": 6,
+      "total": 423
+    },
+    {
+      "axis": "C",
+      "tool": "pubmed.search_articles",
+      "q": "caspase-1 ASC PYCARD inflammasome pyroptosis mechanism",
+      "max": 5,
+      "n": 5,
+      "total": 33
+    },
+    {
+      "axis": "C",
+      "tool": "pubmed.search_articles",
+      "q": "IL-18 IL-1beta pyroptosis inflammatory cell death",
+      "max": 4,
+      "n": 4,
+      "total": 1334
+    },
+    {
+      "axis": "D",
+      "tool": "pubmed.search_articles",
+      "q": "canakinumab CANTOS interleukin-1beta cardiovascular",
+      "max": 5,
+      "n": 5,
+      "total": 77
+    },
+    {
+      "axis": "D",
+      "tool": "pubmed.search_articles",
+      "q": "colchicine COLCOT LoDoCo cardiovascular events",
+      "max": 5,
+      "n": 3,
+      "total": 3
+    },
+    {
+      "axis": "D",
+      "tool": "pubmed.search_articles",
+      "q": "residual inflammatory risk atherosclerosis",
+      "max": 4,
+      "n": 4,
+      "total": 383
+    },
+    {
+      "axis": "D",
+      "tool": "pubmed.search_articles",
+      "q": "familial Mediterranean fever cardiovascular risk atherosclerosis",
+      "max": 5,
+      "n": 5,
+      "total": 30
+    },
+    {
+      "axis": "E",
+      "tool": "pubmed.search_articles",
+      "q": "single-cell RNA sequencing atherosclerosis Mendelian randomization drug target",
+      "max": 6,
+      "n": 5,
+      "total": 5
+    },
+    {
+      "axis": "E",
+      "tool": "pubmed.search_articles",
+      "q": "single cell bulk transcriptome atherosclerosis plaque biomarker validation",
+      "max": 5,
+      "n": 5,
+      "total": 8
+    },
+    {
+      "axis": "E",
+      "tool": "pubmed.search_articles",
+      "q": "knowledge graph evidence graph drug target discovery",
+      "max": 4,
+      "n": 4,
+      "total": 22
+    },
+    {
+      "axis": "E",
+      "tool": "pubmed.search_articles",
+      "q": "transcriptome-wide association study atherosclerosis cardiovascular",
+      "max": 4,
+      "n": 4,
+      "total": 22
+    },
+    {
+      "axis": "E",
+      "tool": "pubmed.search_articles",
+      "q": "integrated single cell atlas atherosclerotic plaque",
+      "max": 4,
+      "n": 4,
+      "total": 9
+    }
+  ],
+  "notes": [
+    "bioRxiv connector supports only category+date filters (no keyword search); PubMed used as primary. Preprints flagged low confidence if used.",
+    "A4 = Integrated single-cell atlas of human plaques (Nat Commun 2025, PMID 40931012). Cited as literature method-precedent ONLY; DS_SC_ATLAS_INTEGRATED stays NEEDS_REVIEW as a DATA source per Day-1 gate."
+  ],
+  "anchor_papers": [
+    {
+      "key": "A1",
+      "pmid": "38781301",
+      "doi": "10.1161/CIRCRESAHA.124.323891",
+      "note": "HIV inflammation & atherosclerosis (Circ Res 2024)"
+    },
+    {
+      "key": "A2",
+      "pmid": "41795807",
+      "doi": "10.1002/ctm2.70637",
+      "note": "Macrophage galectin-3 -> TLR4/NLRP3 pyroptosis in atherosclerosis (Clin Transl Med)"
+    },
+    {
+      "key": "A3",
+      "pmid": "41299088",
+      "doi": "10.1038/s41418-025-01620-6",
+      "note": "HDAC3 activates endothelial NLRP3 inflammasome (Cell Death Differ 2025)"
+    },
+    {
+      "key": "A4",
+      "pmid": "40931012",
+      "doi": "10.1038/s41467-025-63202-x",
+      "note": "Integrated single-cell atlas of human atherosclerotic plaques (Nat Commun 2025) \u2014 method precedent; DATA source stays NEEDS_REVIEW"
+    },
+    {
+      "key": "A5",
+      "pmid": "38721119",
+      "doi": "10.3389/fneur.2024.1325960",
+      "note": "Residual inflammatory risk & vulnerable carotid plaque (Front Neurol 2024)"
+    }
+  ],
+  "trials_verified": {
+    "COLCOT": {
+      "nct": "NCT02551094",
+      "n": 4745,
+      "status": "COMPLETED"
+    },
+    "CANTOS": {
+      "nct": "NCT01327846",
+      "n": 10066,
+      "status": "COMPLETED"
+    },
+    "LoDoCo2": {
+      "nct": "NCT03048825",
+      "n": 7264,
+      "status": "COMPLETED"
+    }
+  },
+  "n_pubmed_papers_fetched": 76,
+  "n_claims_final": 57
+}

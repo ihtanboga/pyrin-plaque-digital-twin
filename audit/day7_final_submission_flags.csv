@@ -1,0 +1,11 @@
+check,question,status,severity,finding
+1,"README figure links are relative paths, not artifact placeholders?",PASS,INFO,"All 5 README figure links use repo-relative results/figures/figN_*.png; zero artifact placeholders, confirmed in shipped zip copy too."
+2,No stale GSDME wording remains (live)?,PASS,INFO,Old phrasing only appears in audit/patch-log files documenting the fix; live text uses canonical GENERIC_PYROPTOSIS/GSDME wording with 14/14 PYRIN_MODULE genes present.
+3,GSE120521 pairing wording canonical?,PASS,INFO,"No unhedged 'Pairing: VERIFIED' or 'GSM crosswalk verified' strings found; canonical assumption-hedged wording present in day4 note, gate review, and metadata CSV."
+4,No banned live claims present?,PASS,INFO,Unsafe-phrase hits are confined to 'This is NOT' and 'Claims to avoid' guard sections; no live banned claim detected.
+5,Raw data not packaged?,PASS,INFO,"Zip (144 files, 3,790,305 bytes) contains no data/raw, .h5ad, __pycache__, .git, or .parquet entries."
+6,Manifest counts match actual zip listing?,PASS,INFO,"final_package_manifest.md was recomputed from the actual zip listing (144 entries, 3.8MB, per-category counts), not hard-coded."
+7,Checksum sidecar matches actual zip and is pointed to correctly (no circular reference)?,PASS,INFO,PACKAGE_CHECKSUM.txt sha256 matches the zip; manifest references it by name as the authoritative external checksum with no self-referential hash loop.
+8,Claude Science usage visible and concrete?,PASS,INFO,"Usage statement and README section 5 detail 7 MCP connectors, 57-claim evidence graph, omics analysis, figure generation, provenance, 6 reviewer gates, and corrections list."
+9,Reviewer-agent audit history linked?,PASS,INFO,"reports/reviewer_audit.md is linked from README and the integrated report, documenting 6 gates with pass/flag counts."
+10,Project ready for hackathon submission?,PASS,MINOR,All structural/wording/packaging checks pass; readiness also cites smoke PASS and 13/13 tests as 'prior' results not re-executed in this verification pass.

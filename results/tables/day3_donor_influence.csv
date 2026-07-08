@@ -1,0 +1,7 @@
+cell_type,n_donors,overall_mean,donor_mean_min,donor_mean_max,donor_spread,top_donor,mean_excl_top_donor,delta_excl_top,min_donor_cellfrac,single_donor_flag
+T/NK,6,0.3824,0.3509,0.4652,0.1143,GSM4837523,0.3809,-0.0016,0.019,False
+Mast,6,0.3192,0.248,0.3443,0.0963,GSM4837528,0.2962,-0.0231,0.009,False
+Endothelial,6,0.4377,0.3842,0.4624,0.0782,GSM4837526,0.4293,-0.0085,0.116,False
+B/Plasma,6,0.2954,0.2671,0.345,0.0779,GSM4837527,0.2952,-0.0002,0.002,False
+SMC/Fibroblast,6,0.3587,0.3299,0.4046,0.0747,GSM4837524,0.3515,-0.0072,0.103,False
+Macrophage/Myeloid,6,0.5536,0.5158,0.5756,0.0597,GSM4837524,0.5336,-0.0201,0.027,False

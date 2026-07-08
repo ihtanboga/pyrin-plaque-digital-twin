@@ -1,0 +1,11 @@
+check,question,status,finding
+1,Is GSE159677 really the data source used?,PASS,"Filtered aggregate matrix (307.8MB, sha256 8cd0b7f8), 49380 cells, 6 samples/3 patients, confirmed as source."
+2,Did we avoid DS_SC_ATLAS_INTEGRATED?,PASS,atlas_used=false; atlas explicitly excluded and left NEEDS_REVIEW rather than silently incorporated.
+3,Are published labels used where available (or provisional clearly marked)?,PASS,No published labels in GEO supp; provisional Leiden-based annotation (22 clusters -> 6 compartments) labelled provisional in all figures.
+4,Are shared downstream genes excluded from discriminative pyrin-vs-NLRP3 scoring?,PASS,"PYCARD/CASP1/GSDMD/IL1B/IL18 excluded from both backbones; main comparison uses backbone-only scores, and signal survives exclusion (backbone 0.554 > full 0.518)."
+5,Is MEFV detection reported honestly?,PASS,"Low overall detection (0.97%) reported up front with cell-type/sample breakdown and explicit dropout-prone caveat, not buried."
+6,Are high-scoring states driven by one donor/sample?,FLAG,"Top states robust (n_donors>=5-6, spread<=0.11, top-donor removal changes mean<=0.023), but two small clusters (leiden16 n=138, leiden4 n=160) rest on only 3-5 donors."
+7,Are all figures reproducible from named code?,PASS,"5 figures with figure cards, reproducible code, citing GSE159677 and named script scripts/02_score_plaque_cell_states.py; 7 pytest tests pass."
+8,Are any claims causal or overinterpreted?,PASS,Language restricted to 'program score'/'pyrin-permissiveness'; no causal or mechanistic claims made.
+9,Are null/weak results reported honestly?,PASS,"Random-control result (82nd percentile, p~0.18, 'elevated but NOT extreme') stated plainly rather than oversold."
+10,Should Day 4 proceed?,PASS,"Core pipeline, labeling, exclusion logic, and honesty of reporting are sound; proceed with the noted low-n cluster caveat carried forward."

@@ -1,0 +1,9 @@
+column,sample_id,gsm,patient,status,pair_id,verification
+MB1_FPKM_stable,MB1,GSM3402504,Patient 1,stable,1,GEO series matrix Sample_description/characteristics
+MB2_FPKM_unstable,MB2,GSM3402505,Patient 1,unstable,1,GEO series matrix Sample_description/characteristics
+MB3_FPKM_stable,MB3,GSM3402506,Patient 2,stable,2,GEO series matrix Sample_description/characteristics
+MB4_FPKM_unstable,MB4,GSM3402507,Patient 2,unstable,2,GEO series matrix Sample_description/characteristics
+MB5_FPKM_stable,MB5,GSM3402508,Patient 3,stable,3,GEO series matrix Sample_description/characteristics
+MB6_FPKM_unstable,MB6,GSM3402509,Patient 3,unstable,3,GEO series matrix Sample_description/characteristics
+MB9_FPKM_stable,MB9,GSM3402510,Patient 4,stable,4,GEO series matrix Sample_description/characteristics
+MB10_FPKM_unstable,MB10,GSM3402511,Patient 4,unstable,4,GEO series matrix Sample_description/characteristics

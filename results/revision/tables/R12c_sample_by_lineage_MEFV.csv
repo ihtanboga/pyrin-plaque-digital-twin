@@ -1,0 +1,31 @@
+patient,region,lineage,n,MEFV_pos,MEFV_pct
+Patient 1,AC,Dendritic cell,228,1,0.43859649122807015
+Patient 1,AC,Macrophage,2322,10,0.4306632213608958
+Patient 1,AC,Mixed,201,0,0.0
+Patient 1,AC,Monocyte,1480,49,3.310810810810811
+Patient 1,AC,Neutrophil,22,0,0.0
+Patient 1,PA,Dendritic cell,30,0,0.0
+Patient 1,PA,Macrophage,45,1,2.2222222222222223
+Patient 1,PA,Mixed,16,0,0.0
+Patient 1,PA,Monocyte,179,9,5.027932960893855
+Patient 1,PA,Neutrophil,2,0,0.0
+Patient 2,AC,Dendritic cell,145,6,4.137931034482759
+Patient 2,AC,Macrophage,539,8,1.484230055658627
+Patient 2,AC,Mixed,95,0,0.0
+Patient 2,AC,Monocyte,838,48,5.727923627684964
+Patient 2,AC,Neutrophil,1,0,0.0
+Patient 2,PA,Dendritic cell,24,1,4.166666666666667
+Patient 2,PA,Macrophage,36,0,0.0
+Patient 2,PA,Mixed,23,0,0.0
+Patient 2,PA,Monocyte,191,19,9.947643979057592
+Patient 2,PA,Neutrophil,59,1,1.694915254237288
+Patient 3,AC,Dendritic cell,224,12,5.357142857142857
+Patient 3,AC,Macrophage,518,25,4.826254826254826
+Patient 3,AC,Mixed,83,2,2.4096385542168677
+Patient 3,AC,Monocyte,1093,125,11.436413540713632
+Patient 3,AC,Neutrophil,2,0,0.0
+Patient 3,PA,Dendritic cell,25,2,8.0
+Patient 3,PA,Macrophage,138,3,2.1739130434782608
+Patient 3,PA,Mixed,16,1,6.25
+Patient 3,PA,Monocyte,345,62,17.971014492753625
+Patient 3,PA,Neutrophil,14,0,0.0

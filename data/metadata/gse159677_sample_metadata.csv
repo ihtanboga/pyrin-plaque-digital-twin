@@ -1,0 +1,7 @@
+aggr_suffix,gsm,patient,region,location,geo_library_name,verification
+1,GSM4837524,Patient 1,PA,proximal adjacent,01dat20190515tisCARconHEA,depositor Aggregated.Sample.Meta + barcode match to molecule_info pass_filter
+2,GSM4837523,Patient 1,AC,atherosclerotic core,02dat20190515tisCARconDIS,depositor Aggregated.Sample.Meta + barcode match to molecule_info pass_filter
+3,GSM4837526,Patient 2,PA,proximal adjacent,01dat20190620tisCARconHEA,depositor Aggregated.Sample.Meta + barcode match to molecule_info pass_filter
+4,GSM4837525,Patient 2,AC,atherosclerotic core,02dat20190620tisCARconDIS,depositor Aggregated.Sample.Meta + barcode match to molecule_info pass_filter
+5,GSM4837528,Patient 3,PA,proximal adjacent,01dat20190717tisCARconHEA,depositor Aggregated.Sample.Meta + barcode match to molecule_info pass_filter
+6,GSM4837527,Patient 3,AC,atherosclerotic core,02dat20190717tisCARconDIS,depositor Aggregated.Sample.Meta + barcode match to molecule_info pass_filter

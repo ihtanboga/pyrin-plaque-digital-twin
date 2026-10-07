@@ -1,0 +1,7 @@
+aggr_suffix,gsm_assumed_by_v1,patient,region_assumed_by_v1,note
+1,GSM4837523,Patient 1,AC,v1 code assumed aggr order = GSM order; true sample is GSM4837524 (PA)
+2,GSM4837524,Patient 1,PA,true sample is GSM4837523 (AC)
+3,GSM4837525,Patient 2,AC,true sample is GSM4837526 (PA)
+4,GSM4837526,Patient 2,PA,true sample is GSM4837525 (AC)
+5,GSM4837527,Patient 3,AC,true sample is GSM4837528 (PA)
+6,GSM4837528,Patient 3,PA,true sample is GSM4837527 (AC)

@@ -1,0 +1,29 @@
+# Revision v2: two-signal pyrin inflammasome output model (DIMENSIONLESS).
+# Hypothesis-generating only. NOT calibrated to patients, drugs, protein/cytokine concentrations or MEFV variants.
+# Signal 1 (priming) acts on transcription (pro-IL-1b pool, weaker MEFV induction); signal 2 gates pyrin.
+# The activation threshold is defined relative to signal 2 (interchangeable with it by construction).
+baseline:
+  priming_input: 1.0                 # signal 1 (NF-kB-type priming)
+  signal2_input: 1.0                 # RhoA-inactivating / PKN-14-3-3-releasing stimulus
+  pyrin_activation_threshold: 0.5    # gate: activation proportional to max(0, signal2 - threshold)
+  inhibition_factor: 0.0             # 0 = none; 1 = full block of pyrin activation
+  pyrin_activation_rate: 0.8
+  pyrin_basal_synthesis: 0.05        # constitutive MEFV/pyrin supply
+  pyrin_priming_synthesis: 0.05      # priming-inducible MEFV/pyrin supply
+  pyrin_turnover: 0.1                # -> primed pyrin pool = (0.05 + 0.05*priming)/0.1 = 1.0 at baseline
+  ASC_recruitment_rate: 0.6
+  CASP1_activation_rate: 0.7
+  GSDMD_cleavage_rate: 0.9
+  cytokine_maturation_rate: 0.5      # caspase-1-dependent maturation of pro-IL-1b and pro-IL-18
+  proIL1B_priming_synthesis: 0.1     # pro-IL-1b synthesis requires priming
+  proIL18_constitutive_synthesis: 0.1  # pro-IL-18 is constitutive
+  pro_turnover: 0.1                  # -> primed pro-cytokine pools = 1.0 at baseline
+  mature_turnover: 0.02
+  pore_release_rate: 0.5             # sub-lytic release of mature cytokine through GSDMD pores
+  pore_repair: 0.15                  # pore removal (membrane repair) in surviving cells
+  lysis_rate: 0.3                    # NINJ1-like plasma-membrane rupture
+  lysis_pore_threshold: 0.3          # pore load at half-maximal lysis hazard
+  lysis_hill: 4.0
+  decay: 0.15                        # first-order decay of active pyrin, ASC specks, caspase-1
+  clearance: 0.1                     # extracellular cytokine clearance
+  saturation: 2.0                    # ceiling of bounded production terms
